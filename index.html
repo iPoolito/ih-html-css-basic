@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Titulo 1</title>
+</head>
+<body>
+     <div> <!--DIV es una etiqueta general-->
+        <nav> <!-- DIV para establecer una etiqeta para barras de navegacion-->
+            <!--A refiere a hipervinculos,target _blank me abre en otra pestana-->
+            <a href="https://ironhack.com" target="_blank">Ir a ironhack</a> 
+            <a href="https://Google.com" target="_blank">Ir a Google</a> 
+            <a href="./adicional.html">Ir a la pagina adicional</a> 
+
+
+        </nav>
+        <!--SECTION SE UTILIZA PARA ESTABLECER UNA PARTE DE LA PAGINA-->
+        <!--EL ID SOLAMENTE SE UTILIZA PARA UNA SOLA ETIQUETA-->
+        <section id="main">
+            <!-- H1 se utiliza para titulos-->
+            <h1 id="titulo-1">Titulo 1</h1>
+            <h2 id="titulo-2">Titulo 2</h2>
+            <p>
+                hola soy un parrafo.
+            </p>
+            <!-- FIGURE para establecer que voy a utilizar una IMGEN (ENVOLUTRA)-->
+            <figure>  
+                <!--Generar una imagen-->
+                <!-- se puede generar una imagen de 2 formas-->
+                <!--1. Ruta absoluta-->
+                <img src="https://cdni.rt.com/actualidad/public_images/2019.04/article/5ca865b308f3d9f63a8b4567.jpg" alt="perritoBonito">
+                <!--2.Ruta relativa-->
+                <img src="./img/perrito.jpg" alt="perritoRiendo">
+            </figure>
+            <!--OL Es establecer una lista ordenada-->
+            <ol>
+                <li>Listado 1</li>
+                <li>Listado 2</li>
+                <li>Listado 3</li>
+            </ol>
+            <!--UL Lista desordenada-->
+            <ul>
+                <li id="list-1" class="list">hola</li>
+                <li id="list-2" class="list">quetal</li>
+                <li>holi</li>
+                <li>ew</li>
+                <li>orale</li>
+            </ul>
+            <!--table es la tabla-->
+            <table>
+                <!--TR ES LA FILA-->
+                <tr>
+                <!--th son los encabezados-->
+                <th>Nombre</th>
+                <th>Bootcamp</th>
+                <th>Ciudad</th>
+            </tr>
+            <tr>
+                <!--TD es como va llenando las filas-->
+                <td>Jose</td>
+                <td>dev</td>
+                <td>madrid</td>
+            </tr>
+            <tr>
+                <!--TD es como va llenando las filas-->
+                <td>pool</td>
+                <td>dev</td>
+                <td>mexico</td>
+            </tr>
+            </table>
+         
+            <h1>LLena el formulario</h1>
+               <!--FORM SON LOS FORMULARIOS-->
+            <form action="">
+                <!--Etiquetas de la pregunta-->
+                <label for="name">
+                    Escribe tu nombre
+                </label>
+                <!-- El atributo de type forza el dato que sea relacionado a ese tipo de dato, como Texto-->
+                <input type="text" name="name">
+                <hr/>
+                <!--Etiqueta de email-->
+                <label for="email">
+                    Escribe tu email
+                </label>
+                <!--que sea la entrada de tipo email-->
+                <input type="email" name="email">
+              <hr/>
+                <!--Etiqueta de date-->
+                    <label for="date">
+                        Escribe tu fecha de nacimiento
+                    </label>
+                    <!--Que sea la entrada de tipo fecha-->
+                    <input type="date" name="birthday">
+                        <hr/>
+
+                            <!--TIpo select, va desplegar opciones-->
+                        <select name="option" id="">
+                            <!--Opciones a desplegar-->
+                        <option name="opcion-1" >Opcion1</option>
+                        <option name="opcion-2">Opcion 2</option>
+                    </select>
+                    <hr/>
+                        <!--    Etiqueta de este formulario-->
+                    <label for="mascota">
+                        Activa la casilla si tiene mascota
+                    </label>
+                    <!--    va ser de tipo checkbox-->
+                    <input type="checkbox" name="pet">
+                    <hr/>
+                    <!--Agregar un botton de tipo enviar para enviar los datos-->
+                    <button type="submit">
+                    Enviar
+                </button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

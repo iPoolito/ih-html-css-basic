@@ -1,0 +1,40 @@
+/*0. importaciones */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,300&display=swap');
+
+
+/* este operador es para todo el documento el */
+*{
+font-family: 'Raleway', sans-serif;
+font-size: 16px;
+}
+
+/*Body es el selector*/
+/*1. ETIQUETAS*/
+body{
+    /*propiedad        valor*/
+    background-color:rgb(230,230,230);
+    color:rgb(55,55,55)
+}
+a{
+    /*Propiedad que quita el subrayado de los links*/
+    text-decoration: none;
+    /*1. inherit, erencia de la etiqueta anterior*/
+    color: rgb(18, 128, 18);
+    font-weight: bold;
+}
+
+/*2. IDS*/
+#titulo-1{
+    color:red;
+    /*1REM= 16PX; toma el valor del cual esta el documento*/
+    font-size: 1.5rem;
+    /*grosor de la fuente*/
+    font-weight: bold;
+}
+
+/*3. CLASES*/
+.list{
+    color: #b7b7ff;
+}
+
+/*4. MEDIA QUERIS*/
